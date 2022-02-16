@@ -11,8 +11,4 @@ extension QueryBuilder {
         return try await self.paginate(page)
     }
 }
-
-@available(macOS 12, iOS 15, watchOS 8, tvOS 15, *)
-extension Page: AsyncRequestDecodable, AsyncResponseEncodable where T: Codable { }
-
 #endif

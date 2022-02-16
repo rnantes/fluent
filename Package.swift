@@ -11,7 +11,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/rnantes/fluent-kit.git", .branch("async-await-reid")),
-        .package(url: "https://github.com/vapor/vapor.git", .branch("async-await")),
+        .package(url: "https://github.com/vapor/vapor.git", from: "4.50.0"),
     ],
     targets: [
         .target(name: "Fluent", dependencies: [
